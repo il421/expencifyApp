@@ -1,0 +1,9 @@
+.DS_Store
+.idea
+*.ai
+*.log
+*.pdf
+*.psd
+node_modules/
+src/playground
+Thumbs.db
