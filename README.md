@@ -8,5 +8,6 @@ https://babeljs.io/docs/en/babel-plugin-proposal-class-properties<br /><br />
 
 To run the app:<br />
 npm install<br />
+npm install -D webpack-cli<br />
 npm run dev-server
 
