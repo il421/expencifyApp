@@ -14,6 +14,13 @@ module.exports = {
       loader: 'babel-loader', // how
       test: /\.js$/, // what
       exclude: /node_modules/ // not
+    }, {
+      test: /\.s?css$/, // CSS and SCSS
+      use: [
+        'style-loader',
+        'css-loader',
+        'sass-loader'
+      ]
     }]
   },
 
