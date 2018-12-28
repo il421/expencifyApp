@@ -16,7 +16,7 @@ const EditExpensePage = (props) => {
       />
       <button onClick={
         () => {
-          props.dispatch(removeExpense(props.expense.id));
+          props.dispatch(removeExpense({ id: props.expense.id }));
           props.history.push('/'); // go to the home page it is from props onject
         }
       }>

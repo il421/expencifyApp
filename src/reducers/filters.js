@@ -3,7 +3,7 @@ import moment from 'moment';
 // Filters Reducer
 const filtersReducerDefaultState = {
   text: '',
-  sortBy: 'amount',
+  sortBy: 'date',
   startDate: moment().startOf('month'),
   endDate: moment().endOf('month')
 };
@@ -19,13 +19,13 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => {
     case 'SORT_BY_AMOUNT':
       return {
         ...state,
-        sortBy: action.sortBy
+        sortBy: 'amount'
       }
 
     case 'SORT_BY_DATE':
       return {
         ...state,
-        sortBy: action.sortBy
+        sortBy: 'date'
       }
 
     case 'SET_START_DATE':
