@@ -5,5 +5,6 @@
 *.pdf
 *.psd
 node_modules/
+src/tests/components/__snapshots__/Header.test.js.snap
 src/playground
 Thumbs.db
