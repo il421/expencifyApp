@@ -1,6 +1,7 @@
-# IndicisionAppReact
-- A simple app (without Redux).
-- Stateless Functional Components
+# ExpensifyAppReact
+- A simple app (+ Redux).
+- Reacr - router
+- Jest - testing
 - Webpack
 - SCSS
 - Used an experimental BABEL plugin plugin-proposal-class-properties (a new syntax)<br />
