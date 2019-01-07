@@ -3,16 +3,21 @@ import ExpenseListItem from './ExpenseListItem';
 import getVisibleExpenses from '../selectors/expenses';
 import { connect } from 'react-redux';
 
-const ExpenseList = (props) => (
+export const ExpenseList = (props) => (
   <div>
     <h1>ExpenseList</h1>
     {
-      props.expenses.map((expense) => (
-        <ExpenseListItem 
-          key={ expense.id }
-          { ...expense } // contain all elements
-        />
-      ))
+      props.expenses.length === 0 ? (
+        <p>No expenses</p>
+      ) : (
+        props.expenses.map((expense) => (
+          <ExpenseListItem 
+            key={ expense.id }
+            { ...expense } // contain all elements
+          />
+        ))
+      )
+      
     }
   </div>
 );
