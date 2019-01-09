@@ -1,6 +1,8 @@
 // entry -> output
 // make a path for outputs
 const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CSSExtract = new ExtractTextPlugin('styles.css'); //extract css in styles.css
 
 module.exports = (env) => {
   console.log('env', env);
@@ -19,16 +21,31 @@ module.exports = (env) => {
         test: /\.js$/, // what
         exclude: /node_modules/ // not
       }, {
-        test: /\.s?css$/, // CSS and SCSS
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader'
-        ]
+        test: /\.s?css$/, // CSS and SCSS 
+        use: CSSExtract.extract({
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                sourceMap: true
+              }
+            },
+            {
+              loader: 'sass-loader',
+              options: {
+                sourceMap: true
+              }
+            }
+          ]
+        })
       }]
     },
-  
-    devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map', // to detect errors inside modeles
+    
+    plugins: [
+      CSSExtract
+    ],
+
+    devtool: isProduction ? 'source-map' : 'inline-source-map', // to detect errors inside modeles
     devServer: {
       contentBase: path.join(__dirname, 'public'),
       historyApiFallback: true // tell server that we are going to tout via a client side
