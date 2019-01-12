@@ -7,7 +7,4 @@
 node_modules/
 src/playground
 Thumbs.db
-public/bundle.js
-public/bundle.js.map
-public/styles.css
-public/styles.css.map
+public/dist/
