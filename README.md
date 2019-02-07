@@ -1,6 +1,6 @@
 # ExpensifyAppReact
 - A simple app (+ Redux).
-- Reacr - router
+- React - router
 - Jest - testing
 - Webpack
 - SCSS
