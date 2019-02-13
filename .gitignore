@@ -8,3 +8,5 @@ node_modules/
 src/playground
 Thumbs.db
 public/dist/
+.env.test
+.env.development

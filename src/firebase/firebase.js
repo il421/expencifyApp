@@ -16,10 +16,6 @@ const database = firebase.database();
 export { firebase, database as default};
 
 
-
-
-
-
 // MY REFERENCES
 // // child_removed
 // database.ref('expenses').on('child_removed', (snapshot) => { // can see removed events data
