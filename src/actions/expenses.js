@@ -1,4 +1,3 @@
-import uuid from 'uuid';
 import database from '../firebase/firebase';
 
 // ADD_EXPENSE
@@ -10,6 +9,7 @@ export const addExpense = (expense) => ({
 export const startAddExpense = (expenseData = {}) => {
   return (dispatch, getState) => {  
     const uid = getState().auth.uid;
+    console.log(uid)
     const {
       description = '', 
       note = '', 
