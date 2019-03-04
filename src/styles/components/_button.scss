@@ -2,7 +2,7 @@
   background: $blue;
   color: white;
   border: none;
-  padding: $s-sizes;
+  padding: $s-size;
   font-size: $font-size-large;
   font-weight: 300;
   display: inline-block;
@@ -14,10 +14,14 @@
   background: none;
   color: white;
   border: none;
-  padding: $s-sizes;
+  padding: $s-size;
   font-size: $font-size-large;
   font-weight: 300;
   display: inline-block;
   text-decoration: none;
   line-height: 1;
+}
+
+.button--secondary {
+  background: #888;
 }

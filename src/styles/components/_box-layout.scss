@@ -11,12 +11,12 @@
 .box-layout__box {
   background: fade-out(white, .15);
   border-radius: 3px;
-  padding: $l-sizes $m-sizes;
+  padding: $l-size $m-size;
   text-align: center;
   width: 25rem;
 }
 
 .box-layout__title {
-  margin: 0 0 $m-sizes 0;
+  margin: 0 0 $m-size 0;
   line-height: 1;
 }
