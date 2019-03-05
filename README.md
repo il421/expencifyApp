@@ -1,4 +1,7 @@
 # ExpensifyAppReact
+Deployed version:
+https://expensify-app-il421.herokuapp.com/
+
 - A simple app (+ Redux).
 - React - router
 - Jest - testing
