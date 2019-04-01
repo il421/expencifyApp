@@ -1,6 +1,6 @@
 {
   "name": "expencify",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "engines": {
     "node": "11.9.0",
     "npm": "6.5.0"
@@ -14,7 +14,7 @@
     "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
     "start": "node server/server.js",
     "heroku-postbuild": "npm run build:prod",
-    "release": "release-it --github.release --no-npm.publish"
+    "release": "release-it --no-npm.publish"
   },
   "author": "Ilya Suglobov",
   "license": "ISC",

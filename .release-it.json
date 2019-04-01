@@ -1,9 +1,10 @@
 {
-  "src": {
-    "tagName": "v%{version}"
+  "git": {
+    "tag": "v${version}",
+    "requireCleanWorkingDir": false,
+    "commitMessage": "Release v${version}"
   },
   "github": {
     "release": true
-  },
-  "git" :{ "requireCleanWorkingDir": false}
+  }
 }
